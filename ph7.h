@@ -667,6 +667,9 @@ PH7_APIEXPORT int ph7_release_value(ph7_vm *pVm,ph7_value *pValue);
 PH7_APIEXPORT ph7_value * ph7_context_new_scalar(ph7_context *pCtx);
 PH7_APIEXPORT ph7_value * ph7_context_new_array(ph7_context *pCtx);
 PH7_APIEXPORT void ph7_context_release_value(ph7_context *pCtx,ph7_value *pValue);
+
+PH7_APIEXPORT int ph7_context_print_backtrace(ph7_context *pCtx);
+
 /* Dynamically Typed Value Object Management Interfaces */
 PH7_APIEXPORT int ph7_value_int(ph7_value *pVal,int iValue);
 PH7_APIEXPORT int ph7_value_int64(ph7_value *pVal,ph7_int64 iValue);

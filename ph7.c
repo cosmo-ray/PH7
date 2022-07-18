@@ -12296,6 +12296,12 @@ static int vm_builtin_debug_print_backtrace(ph7_context *pCtx,int nArg,ph7_value
 	SXUNUSED(apArg);
 	return PH7_OK;
 }
+
+int ph7_context_print_backtrace(ph7_context *pCtx)
+{
+	return vm_builtin_debug_print_backtrace(pCtx, 0, 0);
+}
+
 /*
  * string debug_string_backtrace()
  *  Generate a backtrace
